@@ -71,6 +71,30 @@ Esta imagen sirve para comprobar que sensores se han activado en cada .py progra
 
 ***
 
+### EJEMPLO DE LOS RESULTADOS.
+
+En este apartado aparecen algunos ejemplos de la visualización de los algotimos en distintos escenarios
+
+#### 1. [ESQUINA](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados10.png)
+
+<p algin="center">
+    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados10.png">
+</p>
+
+#### 2. [BFS](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados_laberinto.png)
+
+<p algin="center">
+    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados_laberinto.png">
+</p>
+
+#### 3. [A*](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados_laberinto.png)
+
+<p algin="center">
+    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados_laberinto.png">
+</p>
+
+***
+
 ### MAPAS
 <p algin="center">
     <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/images/laberinto.png">
@@ -111,4 +135,3 @@ En este apartado aparecen algunos ejemplos de la visualización de los algotimos
 <p algin="center">
     <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados_laberinto.png">
 </p>
-
