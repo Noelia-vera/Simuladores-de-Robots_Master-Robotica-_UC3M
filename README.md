@@ -108,8 +108,7 @@ En este apartado aparecen algunos ejemplos de la visualización de los algotimos
     <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/images/map8.png">
     <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/images/map9.png">
     <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/images/map10.png">
-    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/images/map11.png">
-
+    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/images/obstacles.png">
 </p>
 
 ***
