@@ -8,11 +8,6 @@
 #Inicialmente se calcula la orientación y distancia que hay desde su posición actual hasta la meta y se va dirigiendo hacia ella. Sin embargo, 
 #también tiene implementados unos sensores de ultrasonidos incluidos en el propio robot para detectar las paredes e ir girando hacia el lado
 #más libre, rodeando así las paredes hasta el objetivo.
-#############################################################################################################################
-#---------------------------------------------------INSTRUCCIONES DE FUNCIONAMIENTO------------------------------------------
-#1º: El usuario debe indicar controlador quiere usar
-#2º: Introducir las coordenadas de meta
-#############################################################################################################################
 
 #Lo primero es impertar las librerias necesarias para que todos los sensores funcionen
 
@@ -49,7 +44,7 @@ def run_robot(robot):
         sensor.enable(timestep)
         
     # Coordenadas de la meta (sustituir con las coordenadas reales)
-    goal_position = [17.0, 10.0, 0.0]  # Ejemplo de coordenadas [x, y, z]
+    goal_position = [17.0, 2.0, 0.0]  # Ejemplo de coordenadas [x, y, z]
     
     # Variable para controlar si el robot sigue la ruta
     follow_route = False

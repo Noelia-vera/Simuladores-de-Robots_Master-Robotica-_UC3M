@@ -452,7 +452,7 @@ SolidBox {
 }
 E-puck {
   translation 1.24 1.19 0
-  controller "bfs_plotmap_camera"
+  controller "esquina_camera"
   window "<none>"
   camera_width 800
   camera_height 560

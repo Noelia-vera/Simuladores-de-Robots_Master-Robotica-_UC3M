@@ -87,12 +87,17 @@ En este apartado aparecen algunos ejemplos de la visualización de los algotimos
     <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados_laberinto.png">
 </p>
 
-#### 3. [A*](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados_laberinto.png)
+#### 3. [A*](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados_a.png)
 
 <p algin="center">
     <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados_a.png">
 </p>
 
+#### 4. [ESQUINA CAMARA ](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados_esquina_laberinto.png)
+
+<p algin="center">
+    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados_esquina_laberinto.png">
+</p>
 ***
 
 ### MAPAS

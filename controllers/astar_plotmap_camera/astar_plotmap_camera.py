@@ -21,7 +21,7 @@
 
 #############################################################################################################################
 #---------------------------------------------------INSTRUCCIONES DE FUNCIONAMIENTO------------------------------------------
-#1º: El usuario debe indicar que .csv quiere leer para ir de un punto a otro, introduciendo las coordenadas de meta.
+#1º: El usuario debe incidar que .csv quiere leer para ir de un punto a otro.
 #2º: al iniciar la simulación aparece una ventana emergente con el mapa de los nodos explorados. Colocar con el ratón la ventana en una
 #zona de la pantalla que permita ver la simulación, por ejemplo, encima del código.
 #3º: darle al botón de "cerrar la pantalla emergente (X)" para que comience la simulación o sino el robot no se moverá. 
@@ -54,8 +54,8 @@ import matplotlib.pyplot as plt
 #Coordenadas de inicio y fin
 START_X = 1
 START_Y = 1
-END_X = 2
-END_Y = 6
+END_X = 6
+END_Y = 2
 
 
 #Definimos coordenadas para plotear el gráfico de nodos explorados

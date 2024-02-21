@@ -9,8 +9,8 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/project
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.3542896170101772 -0.1298638841018225 0.926074640018163 4.240784984574541
-  position 5.283846345535107 11.855270775214123 8.20407674345117
+  orientation -0.4958030539916791 -0.11658069621241826 0.8605743854677246 3.8379224848263713
+  position 4.779343137355303 6.589126651729425 7.5939906045229915
 }
 TexturedBackground {
 }
@@ -448,11 +448,13 @@ SolidBox {
 E-puck {
   translation 1.04323 1.06 -0.0119646
   rotation -7.016942625277731e-07 -0.9999999999997536 -2.1009939260078682e-08 0.004083392029221972
-  controller "safedirection"
+  controller "esquina_camera"
   controllerArgs [
     ""
   ]
   window "<none>"
+  camera_width 800
+  camera_height 560
   turretSlot [
     InertialUnit {
     }

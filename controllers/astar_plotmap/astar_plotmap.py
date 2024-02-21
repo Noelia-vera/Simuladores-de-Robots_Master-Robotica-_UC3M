@@ -14,7 +14,7 @@
 
 #############################################################################################################################
 #---------------------------------------------------INSTRUCCIONES DE FUNCIONAMIENTO------------------------------------------
-#1º: El usuario debe indicar que .csv quiere leer para ir de un punto a otro, introduciendo las coordenadas de meta.
+#1º: El usuario debe incidar que .csv quiere leer para ir de un punto a otro.
 #2º: al iniciar la simulación aparece una ventana emergente con el mapa de los nodos explorados. Colocar con el ratón la ventana en una
 #zona de la pantalla que permita ver la simulación, por ejemplo, encima del código.
 #3º: darle al botón de "cerrar la pantalla emergente (X)" para que comience la simulación o sino el robot no se moverá. 
@@ -22,7 +22,7 @@
 
 #############################################################################################################################
 
-#Se importan las librerias necesarias y los elementos que hacen que el controlador funcione, en este caso son:
+#Se importan ls librerias necesarias y los elementos que hacen que el controlador funcione, en este caso son:
 #Robot, Motor, GPS, InertialUnit, DistanceSensor
 
 import time
