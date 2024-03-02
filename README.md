@@ -1,6 +1,6 @@
 # Simuladores-de-Robots_Master-Robotica-_UC3M
 ## _Master de Robótica y Automatización, Universidad Carlos 3 de Madrid_
-### Simuladores de Robots - WEBOTS 
+### Simuladores de Robots - GAZEBO 
 </p>
 
 ***
@@ -10,13 +10,9 @@
 
 ***
 #### INSTALACIONES PREVIAS:
-Es necesario instalar las librerías para el contador de timpo y el ploteo de las gráficas.
+Es necesario instalar o tener en el repositorio los archivos relativos a los plugins
 
-pip install time
-</p>
-pip install matplotlib
-</p>
-pip3 install pygame
+
 
 ***
 #### ORGANIZACIÓN DE CARPETAS:
