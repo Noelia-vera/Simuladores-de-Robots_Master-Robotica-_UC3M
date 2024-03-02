@@ -1,0 +1,30 @@
+Gazebo multi-robot simulator, version 11.11.0
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+
+(1709399200 330228364) [Msg] Waiting for master.
+(1709399200 330778619) Failed to create connection to remote host[localhost:11345]
+(1709399201 335676176) [Msg] Connected to gazebo master @ http://127.0.0.1:11345
+(1709399201 335757688) [Msg] Publicized address: 192.168.1.77
+(1709399201 336017934) Loaded .ini file from: "/home/noelia/.gazebo/gui.ini"
+(1709399201 825181416) [Err] [InsertModelWidget.cc:403] Missing model.config for model "/home/noelia/.gazebo/models/hola_mundo_g7"
+(1709399201 825583768) model.config file is missing in directory["/home/noelia/.gazebo/models/hola_mundo_g7"]
+(1709399201 825652491) Invalid filename or directory["/home/noelia/.gazebo/models/hola_mundo_g7.zip"] in GAZEBO_MODEL_PATH. It's not a good idea to put extra files in a GAZEBO_MODEL_PATH because the file structure may be modified by Gazebo.
+(1709399201 825816597) [Err] [InsertModelWidget.cc:403] Missing model.config for model "/home/noelia/.gazebo/models/my_sensors_g9"
+(1709399201 826225563) model.config file is missing in directory["/home/noelia/.gazebo/models/my_sensors_g9"]
+(1709399201 826293583) Invalid filename or directory["/home/noelia/.gazebo/models/my_sensors_g9.zip"] in GAZEBO_MODEL_PATH. It's not a good idea to put extra files in a GAZEBO_MODEL_PATH because the file structure may be modified by Gazebo.
+(1709399201 826369758) [Err] [InsertModelWidget.cc:403] Missing model.config for model "/home/noelia/.gazebo/models/my_sensors_model_g9"
+(1709399201 826826908) model.config file is missing in directory["/home/noelia/.gazebo/models/my_sensors_model_g9"]
+(1709399201 826901506) Invalid filename or directory["/home/noelia/.gazebo/models/my_sensors_model_g9.zip"] in GAZEBO_MODEL_PATH. It's not a good idea to put extra files in a GAZEBO_MODEL_PATH because the file structure may be modified by Gazebo.
+(1709399201 826994905) [Err] [InsertModelWidget.cc:403] Missing model.config for model "/home/noelia/.gazebo/models/my_wheels_g9"
+(1709399201 827368494) model.config file is missing in directory["/home/noelia/.gazebo/models/my_wheels_g9"]
+(1709399201 827433907) Invalid filename or directory["/home/noelia/.gazebo/models/my_wheels_g9.zip"] in GAZEBO_MODEL_PATH. It's not a good idea to put extra files in a GAZEBO_MODEL_PATH because the file structure may be modified by Gazebo.
+(1709399201 827508555) [Err] [InsertModelWidget.cc:403] Missing model.config for model "/home/noelia/.gazebo/models/my_wheels_g9_2"
+(1709399201 827907088) model.config file is missing in directory["/home/noelia/.gazebo/models/my_wheels_g9_2"]
+(1709399201 828014052) Invalid filename or directory["/home/noelia/.gazebo/models/pioneer.zip"] in GAZEBO_MODEL_PATH. It's not a good idea to put extra files in a GAZEBO_MODEL_PATH because the file structure may be modified by Gazebo.
+(1709399201 828874459) [Err] [InsertModelWidget.cc:403] Missing model.config for model "/home/noelia/manipulacion_ws/src/manipulacion_pkg/objects_models/floor"
+(1709399201 829552225) model.config file is missing in directory["/home/noelia/manipulacion_ws/src/manipulacion_pkg/objects_models/floor"]
+(1709399201 829689264) Invalid filename or directory["/home/noelia/manipulacion_ws/src/manipulacion_pkg/objects_models/obstacle_surface_position.yaml"] in GAZEBO_MODEL_PATH. It's not a good idea to put extra files in a GAZEBO_MODEL_PATH because the file structure may be modified by Gazebo.
+(1709399202 813481479) No spacenav daemon found. Spacenav functionality is disabled

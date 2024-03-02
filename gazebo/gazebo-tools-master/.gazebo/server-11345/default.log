@@ -1,0 +1,12 @@
+Gazebo multi-robot simulator, version 11.11.0
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+
+(1709399200 391815568) [Msg] Waiting for master.
+(1709399200 401993324) [Msg] Connected to gazebo master @ http://127.0.0.1:11345
+(1709399200 402035789) [Msg] Publicized address: 192.168.1.77
+(1709399201 66713916) [Msg] Loading world file [/home/noelia/simuladores/src/gazebo/gazebo-tools-master/world/laberinto_p.world.xml]
+(1709399201 388070504) applying Gaussian noise model with mean 0, stddev 0.01, bias 0
+(1709399201 474264117) Init world[default]

@@ -1,0 +1,3 @@
+/home/noelia/.gazebo/models/hola_mundo_g7/build/CMakeFiles/rebuild_cache.dir
+/home/noelia/.gazebo/models/hola_mundo_g7/build/CMakeFiles/edit_cache.dir
+/home/noelia/.gazebo/models/hola_mundo_g7/build/CMakeFiles/hola_mundo.dir
