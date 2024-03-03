@@ -57,13 +57,6 @@ GAZEBO_PLUGIN_PATH=/ruta/a/plugin1/build:/ruta/a/plugin2/build  gazebo --verbose
 
 ***
 
-### ROBOT E-PUCK
-Esta imagen sirve para comprobar que sensores se han activado en cada .py programado
-<p algin="center">
-    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/images/e-puck.png">
-</p>
-
-***
 
 ### EJEMPLO DE LOS RESULTADOS.
 
@@ -74,7 +67,8 @@ En este apartado aparecen algunos ejemplos de la visualización de los algotimos
 <p algin="center">
     <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/Obstacles.png">
 </p>
-[![VIDEO](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/esquina.mp4)](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/esquina.mp4)
+
+[![VIDEO]](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/esquina.mp4)
 
 #### 2. [OBSTACLES_2.WORLD.XML](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/Obstacles_2.png)
 
@@ -97,6 +91,4 @@ En este apartado aparecen algunos ejemplos de la visualización de los algotimos
 <p algin="center">
     <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/sensor.png">
 </p>
-***
-
 ***
