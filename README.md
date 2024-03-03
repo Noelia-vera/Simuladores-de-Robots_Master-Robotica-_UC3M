@@ -25,10 +25,10 @@ sudo -H pip install -r requirements.txt
 #### ORGANIZACIÓN DE CARPETAS DENTO DE GAZEBO:
 * **.gazebo:** Es donde se encuentran los modelos de los robots. Dado que algunos tienen implementados sensores y otros no, se han creado varios modelos del mismo robot para incorporarles diferentes plugins de movimiento. Dentro de la carpeta modelos se encuentra el poineer sin sensores, el pioneer 2, y el pioneer_sensor que tiene movimiento y sensor de distancia.
 * **assests:**  diferentes mundos en formato .csv.
-* ***pioneer:** modelo del robot usado en las simulaciones.
-* ***world:** mundos con los distintos funcionamientos de los robots.
-* ***gazebo-map-from-csv.py:** .py que permite convertir cualquier mundo a .world.xml.
-* ***Imagenes y videos:** demostraciones de los funcionamientos de los mundos.
+* **pioneer:** modelo del robot usado en las simulaciones.
+* **world:** mundos con los distintos funcionamientos de los robots.
+* **gazebo-map-from-csv.py:** .py que permite convertir cualquier mundo a .world.xml.
+* **Imagenes y videos:** demostraciones de los funcionamientos de los mundos.
 
 ***
 #### TIPOS DE ALGOTIRMO DESARROLLADOS Y MUNDOS:
@@ -38,7 +38,7 @@ Para realizar esta practica se han genreado archivos de mundo tipo .world.xml. E
 * **OBSTACLES.WORLD.XML:** En este mundo se encuentra un robot en la equina superior izquierda que navega hasta el esquina contraria del escenario en el que se encuentra.
 * **OBSTACLES_2.WORLD.XML:**  En este mundo hay dos robots, uno en cada esquina superior, que navegan hasta las esquinas inferiores contrarias cruzándose por el camino. 
 * **OBSTACLES_KINECT.WORLD.XML:** En este mundo esta incluido un robot con el modelo de la cámara kinect.
-* **lABERINTO_P.WORLD.XML:** En este mundo se ha incluido un robot con movimiento esquivando obstáculos y un sensor de distancia mediante un laser.
+* **LABERINTO_P.WORLD.XML:** En este mundo se ha incluido un robot con movimiento esquivando obstáculos y un sensor de distancia mediante un laser.
 * **MAP0-MAP11.WORLD.XML:** Distintos laberintos de diferentes geometías y áreas.
 
 ***
@@ -69,17 +69,17 @@ Esta imagen sirve para comprobar que sensores se han activado en cada .py progra
 
 En este apartado aparecen algunos ejemplos de la visualización de los algotimos en distintos escenarios
 
-#### 1. [OBSTACLES.WORLD.XML](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/esquina.mp4)
+#### 1. [OBSTACLES.WORLD.XML](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/Obstacles.png)
 
 <p algin="center">
-    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados10.png">
+    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/Obstacles.png">
 </p>
-[VIDEO](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/esquina.mp4)
+[![VIDEO](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/esquina.mp4)](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/esquina.mp4)
 
-#### 2. [OBSTACLES_2.WORLD.XML](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados_laberinto.png)
+#### 2. [OBSTACLES_2.WORLD.XML](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/Obstacles_2.png)
 
 <p algin="center">
-    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados_laberinto.png">
+    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/Obstacles_2.png">
 </p>
 
 [![VIDEO](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/esquina_doble.mp4)](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/esquina_doble.mp4)
