@@ -10,52 +10,50 @@
 
 ***
 #### INSTALACIONES PREVIAS:
-Es necesario instalar o tener en el repositorio los archivos relativos a los plugins
-
+Install dependencies
+```bash
+sudo -H pip install -r requirements.txt
+```
 
 
 ***
 #### ORGANIZACIÓN DE CARPETAS:
-* **controllers:** archivos .py que contienen los controladores para ejecutar en el robot
-* **images:**  imágen del robot e-puck y de los mapas (12 posibilidades)
-* **webots-tools-master:** imagenes de los mapas en .jpg, archivos de los mapas en formato .wbt, archivos .py para transformar un .csv a un .wbt y carpeta de assets con los .cvs que contienen los distintos mapas.
-* **results:** Imágenes de los resultados obtenidos.
+* **webots:** practica de simuladores usando webots
+* **gazebo:**  practica de simuladores usando gazebo
+***
+
+#### ORGANIZACIÓN DE CARPETAS DENTO DE GAZEBO:
+* **.gazebo:** Es donde se encuentran los modelos de los robots. Dado que algunos tienen implementados sensores y otros no, se han creado varios modelos del mismo robot para incorporarles diferentes plugins de movimiento. Dentro de la carpeta modelos se encuentra el poineer sin sensores, el pioneer 2, y el pioneer_sensor que tiene movimiento y sensor de distancia.
+* **assests:**  diferentes mundos en formato .csv.
+* ***pioneer:** modelo del robot usado en las simulaciones.
+* ***world:** mundos con los distintos funcionamientos de los robots.
+* ***gazebo-map-from-csv.py:** .py que permite convertir cualquier mundo a .world.xml.
+* ***Imagenes y videos:** demostraciones de los funcionamientos de los mundos.
 
 ***
-#### TIPOS DE ALGOTIRMO DESARROLLADOS Y ESCENARIOS:
-* **ESQUINA:** algotimo que esquiva obstáculos y navega por el mapa tipo .wbt
-* **BFS y ASTAR:**  algoritmos de path planning qye necesitan de un .csv para ejecutarse (incluidos).
-* **LABERINTO Y MAP1:** se han creado estos dos escenarios propios con las indicaciones de dimensiones en función del nombre y obstáculos diseñados de manera propia.
-* **MAP2-MAP11:** dados por el profesor en otra asignatura del master.
+#### TIPOS DE ALGOTIRMO DESARROLLADOS Y MUNDOS:
+
+Para realizar esta practica se han genreado archivos de mundo tipo .world.xml. En el código se introduce el modelo del robot que se quiere usar y en el modelo se implementan los plugins que contienen la configuración de ejecución del robot.
+
+* **OBSTACLES.WORLD.XML:** En este mundo se encuentra un robot en la equina superior izquierda que navega hasta el esquina contraria del escenario en el que se encuentra.
+* **OBSTACLES_2.WORLD.XML:**  En este mundo hay dos robots, uno en cada esquina superior, que navegan hasta las esquinas inferiores contrarias cruzándose por el camino. 
+* **OBSTACLES_KINECT.WORLD.XML:** En este mundo esta incluido un robot con el modelo de la cámara kinect.
+* **lABERINTO_P.WORLD.XML:** En este mundo se ha incluido un robot con movimiento esquivando obstáculos y un sensor de distancia mediante un laser.
+* **MAP0-MAP11.WORLD.XML:** Distintos laberintos de diferentes geometías y áreas.
 
 ***
 ### INSTRUCCIONES DE EJECUCIÓN
 
-1. El usuario debe indicar que controlador quiere usar, en caso de que sea el de esquina, no es necesario la lectura de un .csv. Sin embargo, si es un algoritmo de path planning, será necesario indicar el .csv que se corresponda con el mapa.
-2. Introducir las coordenadas de meta.
-3. Al iniciar la simulación aparece una ventana emergente con el mapa de los nodos explorados. Colocar con el ratón la ventana en una zona de la pantalla que permita ver la simulación, por ejemplo, encima del código.
-4. darle al botón de "cerrar la pantalla emergente (X)" para que comience la simulación o sino el robot no se moverá. Tranquilo, el mapa con los nodos explorados no se irá de ahi.
-
-***
-
-### ESQUINA.PY
-En este codigo se implementa un método que pretende llevar a un robot desde su posición inicial a la esquina opuesta del mapa. Para ello el planteamiento que se ha hecho es una solución hidrida entre ir de manera directa de un punto a otro pero esquivas a la vez los obstaculos rodenadolos, como si fuera un algoritmo tipo bug. Inicialmente se calcula la orientación y distancia que hay desde su posición actual hasta la meta y se va dirigiendo el robot hacia ella. Sin embargo, también tiene implementados unos sensores de ultrasonidos incluidos en el propio robot para detectar las paredes e ir girando hacia el lado más libre, rodeando así las paredes hasta el objetivo. Los sensores de ultrasonidos que tiene activos son los ps0, ps6 y ps7, además de un GPS y una IMU. En este codigo no se lee el .csv del mapa
-
-### ESQUINA_CAMERA.PY
-En este codigo se implementa un método que pretende llevar a un robot desde su posición inicial a la esquina opuesta del mapa. Para ello el planteamiento que se ha hecho es una solución hidrida entre ir de manera directa de un punto a otro pero esquivas a la vez los obstaculos rodenadolos, como si fuera un algoritmo tipo bug. Inicialmente se calcula la orientación y distancia que hay desde su posición actual hasta la meta y se va dirigiendo el robot hacia ella. Sin embargo, también tiene implementados unos sensores de ultrasonidos incluidos en el propio robot para detectar las paredes e ir girando hacia el lado más libre, rodeando así las paredes hasta el objetivo. Los sensores de ultrasonidos que tiene activos son los ps0, ps6 y ps7, además de un GPS y una IMU. En este codigo no se lee el .csv del mapa
-La única diferencia con el algoritmo anterior es que aqui está activa la cámara del propio robot para ver desde su perspectiva el recorrido. En este caso, si se quiere que la velocidad de la simulación aumente no es posible por el procesamiento de la imagen de la cámara. 
-
-### BFS_PLOTMAP.PY
-Este código implementa el algoritmo breadth first search en el que se usa una heurística para calcular la distancia desde el nodo inical al final y buscar un camino greedy. Con este código no solo se puede ir a la  esquina opuesta del mapa sino a cualquier parte de este. Para ello se ha hecho uso de la libreria pygame para sacar por pantalla el mapa con los nodos explorados, el punto inical y el final. Tras obtenerse el mejor camino para llegar al destino, el robot e-puck, el cual lleva un GPS y una IMU para saber cual va siendo la posición y orientación del robot, va haciendo el trayecto siguiendo los nodos que llevan hasta el punto final.
-
-### BFS_PLOTMAP_CAMERA.PY
-Este código implementa el algoritmo breadth first search en el que se usa una heurística para calcular la distancia desde el nodo inical al final y buscar un camino greedy. Con este código no solo se puede ir a la  esquina opuesta del mapa sino a cualquier parte de este. Para ello se ha hecho uso de la libreria pygame para sacar por pantalla el mapa con los nodos explorados, el punto inical y el final. Tras obtenerse el mejor camino para llegar al destino, el robot e-puck, el cual lleva un GPS y una IMU para saber cual va siendo la posición y orientación del robot, va haciendo el trayecto siguiendo los nodos que llevan hasta el punto final. La única diferencia con el algoritmo anterior es que aqui está activa la cámara del propio robot para ver desde su perspectiva el recorrido. En este caso, si se quiere que la velocidad de la simulación aumente no es posible por el procesamiento de la imagen de la cámara.
-
-### ASTAR_PLOTMAP.PY
-Este código implementa el algoritmo ASTAR en el que se usa una heurística para calcular la distancia desde el nodo inical al final y buscar el camino más eficiente. Con este código no solo se puede ir a la  esquina opuesta del mapa sino a cualquier parte de este. Para ello se ha hecho uso de la libreria pygame para sacar por pantalla el mapa con los nodos explorados, el punto inical y el final. Tras obtenerse el mejor camino para llegar al destino, el robot e-puck, el cual lleva un GPS y una IMU para saber cual va siendo  la posición y orientación del robot, va haciendo el trayecto siguiendo los nodos que llevan hasta el punto final.
-
-### ASTAR_PLOTMAP_CAMERA.PY
-Este código implementa el algoritmo ASTAR en el que se usa una heurística para calcular la distancia desde el nodo inical al final y buscar el camino más eficiente. Con este código no solo se puede ir a la  esquina opuesta del mapa sino a cualquier parte de este. Para ello se ha hecho uso de la libreria pygame para sacar por pantalla el mapa con los nodos explorados, el punto inical y el final. Tras obtenerse el mejor camino para llegar al destino, el robot e-puck, el cual lleva un GPS y una IMU para saber cual va siendo  la posición y orientación del robot, va haciendo el trayecto siguiendo los nodos que llevan hasta el punto final.La única diferencia con el algoritmo anterior es que aqui está activa la cámara del propio robot para ver desde su perspectiva el recorrido. En este caso, si se quiere que la velocidad de la simulación aumente no es posible por el procesamiento de la imagen de la cámara.
+1.  El usuario debe navegar dentro de la carpeta de los mundos y lanzar por terminal el plugin que quiere usar y el mundo.
+```bash
+GAZEBO_PLUGIN_PATH=/ruta/a/plugin/build gazebo --verbose --pause map.world.xml
+```
+2. En el caso de que se quieran ejecitar dos plugins diferentes de un mismo mundo porque hay dos robots incluidos, la forma de hacerlo es la siguiente:
+```bash
+GAZEBO_PLUGIN_PATH=/ruta/a/plugin1/build:/ruta/a/plugin2/build  gazebo --verbose --pause map.world.xml
+```
+3. Disfrutar de la ejecución dándole al play en Gazebo.
+4. En caso de querer ejejutar otros plugins es necesario ejecutarlos de manera previa.
 
 ***
 
@@ -71,45 +69,34 @@ Esta imagen sirve para comprobar que sensores se han activado en cada .py progra
 
 En este apartado aparecen algunos ejemplos de la visualización de los algotimos en distintos escenarios
 
-#### 1. [ESQUINA](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados10.png)
+#### 1. [OBSTACLES.WORLD.XML](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/esquina.mp4)
 
 <p algin="center">
     <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados10.png">
 </p>
+[VIDEO](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/esquina.mp4)
 
-#### 2. [BFS](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados_laberinto.png)
+#### 2. [OBSTACLES_2.WORLD.XML](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados_laberinto.png)
 
 <p algin="center">
     <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados_laberinto.png">
 </p>
 
-#### 3. [A*](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados_a.png)
+[![VIDEO](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/esquina_doble.mp4)](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/esquina_doble.mp4)
+
+#### 3. [KINECT](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/kinect.png)
 
 <p algin="center">
-    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados_a.png">
+    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/kinect.png">
+    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/kinect_2.png">
+
 </p>
 
-#### 4. [ESQUINA CAMARA ](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados_esquina_laberinto.png)
+#### 4. [LABERINTO_P](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/sensor.png)
 
 <p algin="center">
-    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados_esquina_laberinto.png">
+    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/sensor.png">
 </p>
 ***
-
-### MAPAS
-<p algin="center">
-    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/images/laberinto.png">
-    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/images/map1.png">
-    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/images/map2.png">
-    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/images/map3.png">
-    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/images/map4.png">
-    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/images/map5.png">
-    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/images/map6.png">
-    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/images/map7.png">   
-    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/images/map8.png">
-    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/images/map9.png">
-    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/images/map10.png">
-    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/images/obstacles.png">
-</p>
 
 ***
