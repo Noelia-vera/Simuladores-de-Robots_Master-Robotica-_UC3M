@@ -76,7 +76,7 @@ En este apartado aparecen algunos ejemplos de la visualización de los algotimos
     <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/Obstacles_2.png">
 </p>
 
-[![VIDEO](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/esquina_doble.mp4)](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/esquina_doble.mp4)
+[VIDEO](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/esquina_doble.mp4)
 
 #### 3. [KINECT](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/kinect.png)
 
