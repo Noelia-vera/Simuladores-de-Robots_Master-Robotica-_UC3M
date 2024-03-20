@@ -4,7 +4,7 @@
 </p>
 
 ***
-#### [ENLACE AL REPOSITORIO GITHUB ](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M?tab=readme-ov-file)
+#### [ENLACE AL REPOSITORIO GITHUB ](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/tree/main/gymnasium)
 
 </p>
 
@@ -49,34 +49,34 @@ Da modo de prueba y como su fuera la implementación de un juego, se ha realizad
 ***
 ## RESULTADOS CON IMAGENES Y VIDEOS
 
-### [GOAL_0.PY](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados10.png)
+### [GOAL_0.PY](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/imagenes/1.png)
 En este codigo se implementa un método que va de una esquina a la opuesta del laberinto con obstáculos intermedios.
 <p algin="center">
-    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados10.png">
+    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/imagenes/1.png">
 </p>
 
-### [GOAL_3.PY](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados10.png)
+### [GOAL_3.PY](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/imagenes/2.png)
 En este codigo se implementa un método que va de una esquina a la opuesta del laberinto con obstáculos intermedios.
 <p algin="center">
-    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados10.png">
+    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/imagenes/2.png">
 </p>
 
-### [GOAL_11.PY](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados10.png)
+### [GOAL_11.PY](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/imagenes/3.png)
 En este codigo se implementa un método que va de un punto a otro del laberinto con obstáculos intermedios.
 <p algin="center">
-    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados10.png">
+    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/imagenes/3.png">
 </p>
 
-### [OBSTACLES.PY](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados10.png)
+### [OBSTACLES.PY](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/imagenes/4.png)
 En este codigo se implementa un método que va de una esquina a la opuesta del laberinto con obstáculos intermedios.
 <p algin="center">
-    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados10.png">
+    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/imagenes/4.png">
 </p>
 
-### [CARTPOLR-DISPLAY.PY](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados10.png)
+### [CARTPOLR-DISPLAY.PY](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/imagenes/6.png)
 En este codigo se implementa el quilibrio de un péndulo donde el control solo se puede hacer moviendose en el eje horizontal.
 <p algin="center">
-    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados10.png">
+    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/imagenes/6.png">
 </p>
 
 ***
