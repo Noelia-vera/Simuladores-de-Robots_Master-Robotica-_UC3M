@@ -1,6 +1,6 @@
 # Simuladores-de-Robots_Master-Robotica-_UC3M
 ## _Master de Robótica y Automatización, Universidad Carlos 3 de Madrid_
-### Simuladores de Robots - GAZEBO 
+### Simuladores de Robots - GYMNASIUM 
 </p>
 
 ***
@@ -10,85 +10,73 @@
 
 ***
 #### INSTALACIONES PREVIAS:
-Install dependencies
-```bash
-sudo -H pip install -r requirements.txt
-```
+Es necesario instalar las librerís para que funcione gymnasium
 
+pip install time
+</p>
+pip install gymnasium[classic-control]
 
 ***
 #### ORGANIZACIÓN DE CARPETAS:
-* **webots:** practica de simuladores usando webots
-* **gazebo:**  practica de simuladores usando gazebo
-***
-
-#### ORGANIZACIÓN DE CARPETAS DENTO DE GAZEBO:
-* **.gazebo:** Es donde se encuentran los modelos de los robots. Dado que algunos tienen implementados sensores y otros no, se han creado varios modelos del mismo robot para incorporarles diferentes plugins de movimiento. Dentro de la carpeta modelos se encuentra el poineer sin sensores, el pioneer 2, y el pioneer_sensor que tiene movimiento y sensor de distancia.
-* **assests:**  diferentes mundos en formato .csv.
-* **pioneer:** modelo del robot usado en las simulaciones.
-* **world:** mundos con los distintos funcionamientos de los robots.
-* **gazebo-map-from-csv.py:** .py que permite convertir cualquier mundo a .world.xml.
-* **Imagenes y videos:** demostraciones de los funcionamientos de los mundos.
+* **assests:** distintos mapas con laberintos para probar el simulador.
+* **examples:**  archivos .py para conseguir llegar desde el inicio del laberinto hasta la esquina opuesta.
+* **gymnasium_csv:** configuración del simulador.
+* **imagenes:** Imágenes de los resultados obtenidos.
+* **more examples:** ejemplos de quepeós videojuegos
+* **videos:** videos con los resultados obtenidos
 
 ***
-#### TIPOS DE ALGOTIRMO DESARROLLADOS Y MUNDOS:
+#### TIPOS DE ALGOTIRMO DESARROLLADOS Y ESCENARIOS:
+En esta parte se va a presentar las cosas nuevas que se han hecho para esta práctica
+* **laberinto:** mapa con algunos obstáculos
+* **laberinto_p:** mapa con mayor numero de obstáculos
+* **goal_0.py:** algoritmo para llegar de una esquina a otra en el mapa 'laberinto_p'
+* **goal_3.py:** algoritmo para llegar de un punto a otro en el mapa3 que es más grande
+* **goal_11.py:** algoritmo para llegar de un punto a otro en el mapa 11 que es mucho más grande y con más obstáculos
+* **laberinto.py:** algoritmo para llegar de una esquina a otra en un laberinto con muchos obstáculos.
+* **q-learning_11.py** algoritmo de parendizaje por refuerzo que busca el camino para llegar de un punto a otro en el mapa 11.
+* **q-learning_laberinto.py:** algoritmo de parendizaje por refuerzo que busca el camino para llegar de un punto a otro en el laberinto
+* **MAP2-MAP11:** dados por el profesor en otra asignatura del master.
 
-Para realizar esta practica se han genreado archivos de mundo tipo .world.xml. En el código se introduce el modelo del robot que se quiere usar y en el modelo se implementan los plugins que contienen la configuración de ejecución del robot.
-
-* **OBSTACLES.WORLD.XML:** En este mundo se encuentra un robot en la equina superior izquierda que navega hasta el esquina contraria del escenario en el que se encuentra.
-* **OBSTACLES_2.WORLD.XML:**  En este mundo hay dos robots, uno en cada esquina superior, que navegan hasta las esquinas inferiores contrarias cruzándose por el camino. 
-* **OBSTACLES_KINECT.WORLD.XML:** En este mundo esta incluido un robot con el modelo de la cámara kinect.
-* **LABERINTO_P.WORLD.XML:** En este mundo se ha incluido un robot con movimiento esquivando obstáculos y un sensor de distancia mediante un laser.
-* **MAP0-MAP11.WORLD.XML:** Distintos laberintos de diferentes geometías y áreas.
+Da modo de prueba y como su fuera la implementación de un juego, se ha realizado el siguiente archivo:
+* **cartpole-display.py:** aqui hay un pédulo invertido que se mueve solo en el eje horizontal e intenta mantener el pédulo en vertical para que no se caiga.
 
 ***
 ### INSTRUCCIONES DE EJECUCIÓN
 
-1.  El usuario debe navegar dentro de la carpeta de los mundos y lanzar por terminal el plugin que quiere usar y el mundo.
-```bash
-GAZEBO_PLUGIN_PATH=/ruta/a/plugin/build gazebo --verbose --pause map.world.xml
-```
-2. En el caso de que se quieran ejecitar dos plugins diferentes de un mismo mundo porque hay dos robots incluidos, la forma de hacerlo es la siguiente:
-```bash
-GAZEBO_PLUGIN_PATH=/ruta/a/plugin1/build:/ruta/a/plugin2/build  gazebo --verbose --pause map.world.xml
-```
-3. Disfrutar de la ejecución dándole al play en Gazebo.
-4. En caso de querer ejejutar otros plugins es necesario ejecutarlos de manera previa.
+1. El usuario solo debe ejecutar el archivo .py que quiera probar.
 
 ***
+## RESULTADOS CON IMAGENES Y VIDEOS
 
-
-### EJEMPLO DE LOS RESULTADOS.
-
-En este apartado aparecen algunos ejemplos de la visualización de los algotimos en distintos escenarios
-
-#### 1. [OBSTACLES.WORLD.XML](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/Obstacles.png)
-
+### [GOAL_0.PY](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados10.png)
+En este codigo se implementa un método que va de una esquina a la opuesta del laberinto con obstáculos intermedios.
 <p algin="center">
-    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/Obstacles.png">
+    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados10.png">
 </p>
 
-[VIDEO](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/esquina.mp4)
-
-#### 2. [OBSTACLES_2.WORLD.XML](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/Obstacles_2.png)
-
+### [GOAL_3.PY](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados10.png)
+En este codigo se implementa un método que va de una esquina a la opuesta del laberinto con obstáculos intermedios.
 <p algin="center">
-    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/Obstacles_2.png">
+    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados10.png">
 </p>
 
-[VIDEO](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/esquina_doble.mp4)
-
-#### 3. [KINECT](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/kinect.png)
-
+### [GOAL_11.PY](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados10.png)
+En este codigo se implementa un método que va de un punto a otro del laberinto con obstáculos intermedios.
 <p algin="center">
-    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/kinect.png">
-    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/kinect_2.png">
-
+    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados10.png">
 </p>
 
-#### 4. [LABERINTO_P](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/sensor.png)
-
+### [OBSTACLES.PY](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados10.png)
+En este codigo se implementa un método que va de una esquina a la opuesta del laberinto con obstáculos intermedios.
 <p algin="center">
-    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/sensor.png">
+    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados10.png">
 </p>
 
+### [CARTPOLR-DISPLAY.PY](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados10.png)
+En este codigo se implementa el quilibrio de un péndulo donde el control solo se puede hacer moviendose en el eje horizontal.
+<p algin="center">
+    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/resultados/resultados10.png">
+</p>
+
+***
