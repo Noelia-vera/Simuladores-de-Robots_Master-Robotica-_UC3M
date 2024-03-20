@@ -90,6 +90,6 @@ En este codigo se implementa el quilibrio de un péndulo donde el control solo s
 
 [VIDEO](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/videos/gym6.mp4)
 
-### [ALGORITMOS Q-LEARNING.PY]
+### ALGORITMOS Q-LEARNING.PY
 En este caso se usa aprendizaje por refuerzo para encontrar el camino que lleva desde el punto de inicio al punto final. Para mapas pequeños es sencillo porque el numero de iteraciones se encuentra entre 100 y 200. Sin embargo, se ha probado el algortimo en los mapas 3, 11 y laberinto donde el área es mayor. La solución se termina encontrando pero el tiempo de computo es mucho ya que son necesarias muchas iteraciones, más de 800  todos los casos. 
 ***
