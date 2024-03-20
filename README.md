@@ -40,7 +40,7 @@ En esta parte se va a presentar las cosas nuevas que se han hecho para esta prá
 * **MAP2-MAP11:** dados por el profesor en otra asignatura del master.
 
 A modo de prueba y como su fuera la implementación de un juego, se ha realizado el siguiente archivo:
-* **cartpole-display.py:** aqui hay un pédulo invertido que se mueve solo en el eje horizontal e intenta mantener el pédulo en vertical para que no se caiga.
+* **cartpole-display.py:** aqui hay un pédulo invertido que se mueve solo en el eje horizontal e intenta mantener el pédulo en vertical para que no se caiga. El método que se usa es el de q-learning
 
 ***
 ### INSTRUCCIONES DE EJECUCIÓN
