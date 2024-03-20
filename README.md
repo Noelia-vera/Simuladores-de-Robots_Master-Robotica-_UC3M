@@ -77,10 +77,10 @@ En este codigo se implementa un método que va de un punto a otro del laberinto 
 ### [OBSTACLES.PY](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/imagenes/4.png)
 En este codigo se implementa un método que va de una esquina a la opuesta del laberinto con obstáculos intermedios.
 <p algin="center">
-    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/videos/gym4.mp4">
+    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/imagenes/4.png">
 </p>
 
-[VIDEO](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/esquina.mp4)
+[VIDEO](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/videos/gym4.mp4)
 
 ### [CARTPOLE-DISPLAY.PY](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/imagenes/6.png)
 En este codigo se implementa el quilibrio de un péndulo donde el control solo se puede hacer moviendose en el eje horizontal.
