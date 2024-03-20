@@ -12,9 +12,10 @@
 #### INSTALACIONES PREVIAS:
 Es necesario instalar las librerís para que funcione gymnasium
 
+```bash
 pip install time
-</p>
 pip install gymnasium[classic-control]
+```
 
 ***
 #### ORGANIZACIÓN DE CARPETAS:
@@ -55,11 +56,15 @@ En este codigo se implementa un método que va de una esquina a la opuesta del l
     <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/imagenes/1.png">
 </p>
 
+[VIDEO](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/videos/gym1.mp4)
+
 ### [GOAL_3.PY](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/imagenes/2.png)
 En este codigo se implementa un método que va de una esquina a la opuesta del laberinto con obstáculos intermedios.
 <p algin="center">
     <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/imagenes/2.png">
 </p>
+
+[VIDEO](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/videos/gym2.mp4)
 
 ### [GOAL_11.PY](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/imagenes/3.png)
 En este codigo se implementa un método que va de un punto a otro del laberinto con obstáculos intermedios.
@@ -67,16 +72,22 @@ En este codigo se implementa un método que va de un punto a otro del laberinto 
     <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/imagenes/3.png">
 </p>
 
+[VIDEO](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/videos/gym3.mp4)
+
 ### [OBSTACLES.PY](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/imagenes/4.png)
 En este codigo se implementa un método que va de una esquina a la opuesta del laberinto con obstáculos intermedios.
 <p algin="center">
-    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/imagenes/4.png">
+    <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/videos/gym4.mp4">
 </p>
 
-### [CARTPOLR-DISPLAY.PY](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/imagenes/6.png)
+[VIDEO](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gazebo/gazebo-tools-master/Imagenes%20y%20videos/esquina.mp4)
+
+### [CARTPOLE-DISPLAY.PY](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/imagenes/6.png)
 En este codigo se implementa el quilibrio de un péndulo donde el control solo se puede hacer moviendose en el eje horizontal.
 <p algin="center">
     <img src="https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/imagenes/6.png">
 </p>
+
+[VIDEO](https://github.com/Noelia-vera/Simuladores-de-Robots_Master-Robotica-_UC3M/blob/main/gymnasium/videos/gym6.mp4)
 
 ***
